@@ -15,10 +15,15 @@ path = "example/structured_chat.rs"
 name = "stream_chat"
 path = "example/stream_chat.rs"
 
+[[example]]
+name = "complete_tools_chat"
+path = "example/complete_tools_chat.rs"
+
 [dependencies]
 anyhow = "1.0.105"
 async-openai = { version = "0.43.0", features = ["chat-completion"] }
 async-stream = "0.3.6"
+async-trait = "0.1.92"
 backon = "1.6.0"
 dotenvy = "0.15.7"
 futures = "0.3.34"
